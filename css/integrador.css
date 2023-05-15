@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+}
+
+.carrousel{
+   
+   filter: opacity(0.5)
+    
+}
+.botones {
+    display: flex;
+    flex-direction: row;
+}
+
+.texto {
+    font-size: .9rem;
+    font-weight: lighter;
+    color: gray;
+    line-height: 1.5rem;
+}
+.footer{
+    background: rgb(3,40,48);
+    background: linear-gradient(90deg, rgba(3,40,48,1) 0%, rgba(14,104,122,1) 100%);
+}
+.footer > ul > li {
+    margin-left: .9rem;
+    margin-right: .9rem;
+}
+.link-light{
+    text-decoration: none;
+    text-align: center;
+    
+}
