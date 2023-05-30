@@ -89,6 +89,27 @@ function contarPalabras() {
     
 }
 
-//console.log(window.location.hash);
-//console.log(window.location.pathname);
+function ComprarTickets() {
+
+    // Tomo en variables los valores de los campos
+  
+
+    let nombreTicket=document.getElementById("nombreTicket").value;
+    let apellidoTicket=document.getElementById("apellidoTicket").value;
+    let emailTicket=document.getElementById("emailTicket").calue;
+    let cantEntradas=document.getElementById("cantEntradas").value;
+    let categoria=document.getElementById("categoria").value;
+// calculo el valor total de entradas segun cantidad
+    let total=cantEntradas * 200;
+    // calculo el descuento segun la categoria
+    let descuento=(total * categoria) /100;
+    
+//muestro el valor total a pagar
+    document.getElementById("valorTotal").innerHTML="Total a Pagar: $ " + (total - descuento);
+
+}
+function borrarPrecio(){
+    document.getElementById("valorTotal").innerHTML="Total a Pagar: $ ";
+}
+
 
